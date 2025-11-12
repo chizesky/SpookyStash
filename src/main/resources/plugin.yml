@@ -1,0 +1,9 @@
+name: SpookyStash
+version: '1.0'
+main: ru.enwulf.spookystash.SpookyStash
+api-version: '1.16'
+softdepend:
+  - DecentHolograms
+
+commands:
+  stash:

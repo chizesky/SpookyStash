@@ -1,0 +1,280 @@
+format_key: §b[★] §3Отмычка
+stashes:
+  sfers:
+    stash_name: Сферам
+    key_name: <format> к <displayName>
+    lore:
+      - §9Этой отмычкой можно
+      - §9Открыть хранилище
+      - §9С Сферами
+  instr:
+    stash_name: Инструментам
+    key_name: <format> к <displayName>
+    lore:
+      - §9Этой отмычкой можно
+      - §9Открыть хранилище
+      - §9С Инструментами
+  bronya:
+    stash_name: Броне
+    key_name: <format> к <displayName>
+    lore:
+      - §9Этой отмычкой можно
+      - §9Открыть хранилище
+      - §9С Броней
+  res:
+    stash_name: Ресурсам
+    key_name: <format> к <displayName>
+    lore:
+      - §9Этой отмычкой можно
+      - §9Открыть хранилище
+      - §9С Ресурсами
+  sword:
+    stash_name: Оружию
+    key_name: <format> к <displayName>
+    lore:
+      - §9Этой отмычкой можно
+      - §9Открыть хранилище
+      - §9С Оружием
+
+silver_name: '&#00A2FF[&#02A4FA★&#05A7F4] &#0AACE9С&#0CAEE4е&#0EB0DEр&#11B3D9е&#13B5D3б&#16B8CEр&#18BAC8о'
+silver_lore:
+  - '§9Это валюта для покупки'
+  - '§9отмычек к тайникам'
+  - '§9у Знахаря (/warp stash)'
+
+stash_title: '&x&9&F&0&0&F&F[&x&A&7&0&0&F&4Т&x&A&F&0&0&E&Aа&x&B&7&0&0&D&Fй&x&B&F&0&0&D&4н&x&B&4&0&0&E&2и&x&A&A&0&0&F&1к&x&9&F&0&0&F&F]'
+
+splinter_name: 'осколок'
+splinter_lore: {}
+
+soul_name: 'душа'
+soul_lore: {}
+
+messages:
+  otherOpening: Кто то другой открывает...
+  openingStash: '&eОткрываем Тайник...'
+  lockpickMismatch: '&6Вы не можете открыть этот Тайник этой отмычкой!'
+  clickToUnlock: '&6Нажмите на Тайник отмычкой, чтобы открыть его!'
+  thanksForSilver: '&a[✔] Успешный обмен!'
+  notEnoughSilver: '&c[✘] Ошибка! &fУ Вас не хватает &eСеребра&f!'
+  thanksForSoul: '&a[✔] Успешный обмен!'
+  notEnoughsSoul: '&c[✘] Ошибка! &fУ Вас нет &eПроклятой Души&f!'
+  notEnoughsSplinter: '&7У вас недостатачно осколков'
+  change_nohead: Ошибка! У вас нет головы
+  change_success: '[] Успешная продажа'
+  noFish: no fis
+  fishSold: solded
+
+change:
+  zombie_head:
+    '1':
+      vault: 15000
+    '2':
+      diamond: 5
+    '3':
+      silver: 3
+
+changesilver:
+  silver:
+    '25':
+      commands:
+        - stash givekey %player% res 1
+    '60':
+      commands:
+        - stash givekey %player% bronya 1
+    '55':
+      commands:
+        - stash givekey %player% sword 1
+    '50':
+      commands:
+        - stash givekey %player% instr 1
+    '195':
+      commands:
+        - stash givekey %player% sfers 1
+
+changesoul:
+  soul:
+    '5':
+      commands:
+        - give %player% ironingot 55
+        - give %player% goldingot 33
+        - give %player% netheriteingot 3
+        - give %player% emerald 18
+        - give %player% spawneggcat 3
+        - give %player% wither_rose 2
+        - give %player% tnt 8
+        - give %player% bone 32
+        - give %player% lead 1
+        - give %player% conduit 1
+        - give %player% diamondore 1
+        - give %player% blazerod 27
+        - give %player% spawneggzombie_villager 1
+        - give %player% spawneggskeleton 3
+        - give %player% spawneggpiglin 2
+        - give %player% beacon 1
+        - give %player% anvil 1
+        - give %player% music_disc_pigstep 1
+        - give %player% music_disc_cat 1
+        - give %player% zombie_head 1
+        - give %player% dragon_head 1
+        - give %player% creeper_head 1
+        - give %player% skeleton_head 1
+        - give %player% nametag 1
+        - give %player% netherwart 52
+        - give %player% ghasttear 5
+        - stash givesilver %player% 16
+        - si give donpotion-1 1 %player% true
+        - si give donpotion-8 1 %player% true
+        - give %player% enchanttable 1
+        - give %player% spawneggvillager 1
+        - give %player% whitebanner 12
+        - si give stash1 1 %player% true
+        - si give stash2 1 %player% true
+        - si give stash3 1 %player% true
+        - si give stash4 1 %player% true
+        - si give stash5 1 %player% true
+    '7':
+      commands:
+        - give %player% whitebanner 12
+        - give %player% spawneggvillager 1
+        - give %player% ironingot 55
+        - give %player% goldingot 33
+        - give %player% netheriteingot 3
+        - give %player% emerald 18
+        - give %player% spawneggcat 3
+        - give %player% wither_rose 2
+        - give %player% tnt 8
+        - give %player% bone 32
+        - give %player% lead 1
+        - give %player% conduit 1
+        - give %player% diamondore 1
+        - give %player% blazerod 27
+        - give %player% spawneggzombie_villager 1
+        - give %player% spawneggskeleton 3
+        - give %player% spawneggpiglin 2
+        - give %player% beacon 1
+        - give %player% anvil 1
+        - give %player% music_disc_pigstep 1
+        - give %player% music_disc_cat 1
+        - give %player% zombie_head 1
+        - give %player% dragon_head 1
+        - give %player% skeleton_head 1
+        - give %player% creeper_head 1
+        - give %player% nametag 1
+        - give %player% netherwart 52
+        - give %player% ghasttear 5
+        - stash givesilver %player% 16
+        - si give donpotion-1 1 %player% true
+        - si give donpotion-2 1 %player% true
+        - give %player% enchanttable 1
+        - si give donpotion-3 1 %player% true
+        - si give donpotion-4 1 %player% true
+        - si give donpotion-5 1 %player% true
+        - si give donpotion-6 1 %player% true
+        - si give donpotion-7 1 %player% true
+        - si give donpotion-8 1 %player% true
+        - si give починка 1 %player% true
+        - si give 15лвл 1 %player% true
+        - si give 30лвл 1 %player% true
+        - si give 45лвл 1 %player% true
+        - si give 50лвл 1 %player% true
+        - si give arrow-1 8 %player% true
+        - si give arrow-2 8 %player% true
+        - si give arrow-3 8 %player% true
+        - si give arrow-4 8 %player% true
+        - si give arrow-5 8 %player% true
+        - si give arrow-6 8 %player% true
+        - si give arrow-7 8 %player% true
+        - si give stash1 1 %player% true
+        - si give stash2 1 %player% true
+        - si give stash3 1 %player% true
+        - si give stash4 1 %player% true
+        - si give stash5 1 %player% true
+    '10':
+      commands:
+        - give %player% whitebanner 12
+        - give %player% spawneggvillager 1
+        - give %player% ironingot 55
+        - give %player% goldingot 33
+        - give %player% netheriteingot 3
+        - give %player% emerald 18
+        - give %player% spawneggcat 3
+        - give %player% wither_rose 2
+        - give %player% tnt 8
+        - give %player% bone 32
+        - give %player% lead 1
+        - give %player% conduit 1
+        - give %player% diamondore 1
+        - give %player% blazerod 27
+        - give %player% spawneggzombie_villager 1
+        - give %player% spawneggskeleton 3
+        - give %player% spawneggpiglin 2
+        - give %player% beacon 1
+        - give %player% anvil 1
+        - give %player% music_disc_pigstep 1
+        - give %player% music_disc_cat 1
+        - give %player% zombie_head 1
+        - give %player% dragon_head 1
+        - give %player% skeleton_head 1
+        - give %player% creeper_head 1
+        - give %player% nametag 1
+        - give %player% netherwart 52
+        - give %player% ghasttear 5
+        - stash givesilver %player% 16
+        - si give donpotion-1 1 %player% true
+        - si give donpotion-2 1 %player% true
+        - give %player% enchanttable 1
+        - si give donpotion-3 1 %player% true
+        - si give donpotion-4 1 %player% true
+        - si give donpotion-5 1 %player% true
+        - si give donpotion-6 1 %player% true
+        - si give donpotion-7 1 %player% true
+        - si give donpotion-8 1 %player% true
+        - si give починка 1 %player% true
+        - si give 15лвл 1 %player% true
+        - si give 30лвл 1 %player% true
+        - si give 45лвл 1 %player% true
+        - si give 50лвл 1 %player% true
+        - si give arrow-1 8 %player% true
+        - si give arrow-2 8 %player% true
+        - si give arrow-3 8 %player% true
+        - si give arrow-4 8 %player% true
+        - si give arrow-5 8 %player% true
+        - si give arrow-6 8 %player% true
+        - si give arrow-7 8 %player% true
+        - si give stash1 1 %player% true
+        - si give stash2 1 %player% true
+        - si give stash3 1 %player% true
+        - si give stash4 1 %player% true
+        - si give stash5 1 %player% true
+        - spookyitems give %player% attribute-item-sandromedi
+        - spookyitems give %player% attribute-item-stitana
+        - spookyitems give %player% attribute-item-shimeri
+        - spookyitems give %player% attribute-item-sosirisa
+        - spookyitems give %player% attribute-item-spandori
+        - spookyitems give %player% attribute-item-sandromedi
+        - spookyitems give %player% attribute-item-sapollona
+        - spookyitems give %player% attribute-item-sastreya
+        - spookyitems give %player% attribute-item-tkryshitela
+        - spookyitems give %player% attribute-item-tkaratela
+
+changefish:
+  salmon:
+    vault: 400
+
+commands:
+  '1':
+    amount: 25
+    command: stash givekey %player% res 1
+  '2':
+    amount: 60
+    command: stash givekey %player% bronya 1
+  '3':
+    amount: 55
+    command: stash givekey %player% sword 1
+  '4':
+    amount: 50
+    command: stash givekey %player% instr 1
+  '5':
+    amount: 195
+    command: stash givekey %player% sfers 1
